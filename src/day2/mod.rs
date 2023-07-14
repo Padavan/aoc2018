@@ -15,7 +15,7 @@ fn part1(input: &str) {
   let count: (i32, i32) = input
     .lines()
     .into_iter()
-    .map(|line| count_double_and_triples(line))
+    .map(count_double_and_triples)
     .fold((0, 0), |(d, t), (double, triple)| {
         (d + double, t + triple)
     });

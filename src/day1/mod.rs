@@ -15,7 +15,6 @@ pub fn run() {
 fn part1(input: &str) {
   let count:i32 = input
     .lines()
-    .into_iter()
     .map(|x| x.parse::<i32>().unwrap())
     .sum();
 
@@ -25,7 +24,6 @@ fn part1(input: &str) {
 fn part2(input: &str) {
   let diff_list:Vec<i32> = input
     .lines()
-    .into_iter()
     .map(|x| x.parse::<i32>().unwrap())
     .collect();
 
