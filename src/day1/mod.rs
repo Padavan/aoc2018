@@ -3,6 +3,7 @@ use std::collections::HashSet;
 use std::path::Path;
 
 pub fn run() {
+  println!("day1");
   let input_path = Path::new("./src/day1/input.txt");
   let file_content = std::fs::read_to_string(input_path).unwrap();
 
@@ -18,7 +19,7 @@ fn part1(input: &str) {
     .map(|x| x.parse::<i32>().unwrap())
     .sum();
 
-  println!("day1: {:?}", count);
+  println!("--part1: {:?}", count);
 }
 
 fn part2(input: &str) {
@@ -40,7 +41,7 @@ fn part2(input: &str) {
     current_freq = current_freq + current_diff;
 
     if visited_freqs.contains(&current_freq) {
-      println!("day2: {:?}", current_freq);
+      println!("--part2: {:?}", current_freq);
       return ();
     }
     
