@@ -21,8 +21,6 @@ struct Claim {
   y2: usize
 }
 
-
-//98005
 fn part1(input: &str) {
   let fabric_size = 1000;
 
@@ -80,7 +78,6 @@ fn parse_claim(line: &str) -> Claim {
   return new_claim;
 }
 
-//331
 fn part2(input: &str) {
   let fabric_size = 1000;
 
