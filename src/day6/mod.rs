@@ -7,12 +7,10 @@ pub fn run() {
 
   let file_content_ptr= &file_content;
   let result1 = part1(file_content_ptr);
-  println!("part1: {:?}", result1);
+  println!("--part1: {:?}", result1);
   // 4171
-
-
   let result2 = part2(file_content_ptr);
-  println!("part2: {:?}", result2);
+  println!("--part2: {:?}", result2);
 }
 
 #[derive(Debug, Copy, Clone)]

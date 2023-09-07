@@ -110,7 +110,7 @@ fn part1(shift_arr: &Vec<Shift>) {
       .map(|(index, _)| index);
 
 
-  println!("part1: {:?}", max_guard_id_number * sleepy_minute.unwrap());
+  println!("--part1: {:?}", max_guard_id_number * sleepy_minute.unwrap());
   // 48680
   // 18 unwraps
 }
@@ -146,6 +146,6 @@ fn part2(shift_arr: &Vec<Shift>) {
       .map(|(index, _)| index);
 
 
-  println!("part2: {:?}", max_guard_id_number * sleepy_minute.unwrap());
+  println!("--part2: {:?}", max_guard_id_number * sleepy_minute.unwrap());
   // 94826
 }

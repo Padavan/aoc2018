@@ -43,7 +43,7 @@ fn part1(input: &str) {
     .filter(|(col, row)| matrix[*col][*row] > 1)
     .count();
 
-  println!("part1: {:?}", sum);
+  println!("--part1: {:?}", sum);
 }
 
 fn parse_claim(line: &str) -> Claim {
@@ -103,5 +103,5 @@ fn part2(input: &str) {
       }
     });
 
-  println!("part2: {:?}", not_zashkvaret_ids);
+  println!("--part2: {:?}", not_zashkvaret_ids);
 }

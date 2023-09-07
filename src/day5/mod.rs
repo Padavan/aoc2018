@@ -1,6 +1,5 @@
 use std::{path::Path, cmp::Ordering};
 
-
 pub fn run() {
   println!("day5");
   let input_path = Path::new("./src/day5/input.txt");
@@ -8,10 +7,10 @@ pub fn run() {
 
   let file_content_ptr= &file_content;
   let result1 = part1(file_content_ptr);
-  println!("part1: {:?}", result1);
+  println!("--part1: {:?}", result1);
   //10564
   let result2 = part2(file_content_ptr);
-  println!("part2: {:?}", result2);
+  println!("--part2: {:?}", result2);
 }
 
 fn part1(input: &str) -> usize {
